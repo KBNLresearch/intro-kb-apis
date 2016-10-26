@@ -1,6 +1,6 @@
 # Introduction to the KB APIs
 
-This [tutorial] (tutorial.md) provides an easy introduction to working with the KB search and harvest APIs, aimed primarily at users with no programming experience. It will cover everything you need to know to get started using the APIs, including:
+This [tutorial] (tutorial.md) provides an easy introduction to working with the KB search and harvest APIs, aimed primarily at users with no programming experience. It covers everything you need to know to get started using the APIs, including:
 
 - The main components of the KB infrastructure 
 - The various types of files and metadata that are typically associated with digital objects from the KB collections, such as images and full-text objects
