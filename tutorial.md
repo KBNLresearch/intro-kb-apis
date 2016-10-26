@@ -82,7 +82,7 @@ The [response] (oai_get_record.xml) to this request will be an XML file starting
 
 ## OAI-PMH verbs
 
-In addition to the `getRecord` verb the OAI-PMH standard incorporates five
+In addition to the `GetRecord` verb the OAI-PMH standard incorporates five
 more verbs that can be used to perform other operations:
 
 -   `Identify` will retrieve general information about a repository, such as its name and the version of the OAI-PMH protocol supported: <br/><http://services.kb.nl/mdo/oai?verb=Identify>
