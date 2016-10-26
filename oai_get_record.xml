@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/          http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2016-10-25T20:01:20.862Z</responseDate>
+  <request verb="GetRecord" metadataPrefix="didl">http://services.kb.nl/mdo/oai</request>
+  <GetRecord>
+    <record>
+      <header>
+        <identifier>anp:anp:1981:10:14:20:mpeg21</identifier>
+        <datestamp>2008-09-24T13:19:47.054Z</datestamp>
+        <setSpec>anp</setSpec>
+      </header>
+      <metadata>
+        <didl:DIDL xmlns:didl="urn:mpeg:mpeg21:2002:02-DIDL-NS" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcx="http://krait.kb.nl/coop/tel/handbook/telterms.html" xmlns:srw_dc="info:srw/schema/1/dc-v1.1">
+          <didl:Item dc:identifier="anp:1981:10:14:20:mpeg21">
+            <didl:Component dc:identifier="anp:1981:10:14:20:mpeg21:metadata">
+              <didl:Descriptor>
+                <didl:Statement mimeType="text/plain" dc:type="role">metadata</didl:Statement>
+              </didl:Descriptor>
+              <didl:Resource mimeType="text/xml">
+                <srw_dc:dcx>
+                  <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1981:10:14:20:mpeg21</dc:identifier>
+                  <dcx:recordIdentifier>anp:1981:10:14:20</dcx:recordIdentifier>
+                  <dcterms:isPartOf>ANP</dcterms:isPartOf>
+                  <dcterms:isPartOf>ANP Nieuwsberichten 1937-1989</dcterms:isPartOf>
+                  <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+                  <dcterms:medium xsi:type="dcterms:IMT">image/jpg</dcterms:medium>
+                  <dc:language xsi:type="ISO-639-2">dut</dc:language>
+                  <dc:rights>ANP</dc:rights>
+                  <dcx:recordRights>Koninklijke Bibliotheek, Den Haag</dcx:recordRights>
+                  <dc:title>ANP Nieuwsbericht - 14-10-1981 - 20</dc:title>
+                  <dc:date>1981-10-14</dc:date>
+                  <dcx:volgnummer>20</dcx:volgnummer>
+                </srw_dc:dcx>
+              </didl:Resource>
+            </didl:Component>
+            <didl:Component dc:identifier="anp:1981:10:14:20:mpeg21:image">
+              <didl:Descriptor>
+                <didl:Statement mimeType="text/plain" dc:type="role">image</didl:Statement>
+              </didl:Descriptor>
+              <didl:Resource ref="anp_1981-10-14_20_access.jpg" mimeType="image/jpeg" />
+              <didl:Resource ref="http://resolver.kb.nl/resolve?urn=anp:1981:10:14:20:mpeg21:image" mimeType="image/jpeg" />
+            </didl:Component>
+            <didl:Component dc:identifier="anp:1981:10:14:20:mpeg21:alto">
+              <didl:Descriptor>
+                <didl:Statement mimeType="text/plain" dc:type="role">alto</didl:Statement>
+              </didl:Descriptor>
+              <didl:Resource ref="anp_1981-10-14_20_alto.xml" mimeType="text/xml" />
+              <didl:Resource ref="http://resolver.kb.nl/resolve?urn=anp:1981:10:14:20:mpeg21:alto" mimeType="text/xml" />
+            </didl:Component>
+            <didl:Component dc:identifier="anp:1981:10:14:20:mpeg21:ocr">
+              <didl:Descriptor>
+                <didl:Statement mimeType="text/plain" dc:type="role">ocr</didl:Statement>
+              </didl:Descriptor>
+              <didl:Resource ref="anp_1981-10-14_20_text.xml" mimeType="text/xml" />
+              <didl:Resource ref="http://resolver.kb.nl/resolve?urn=anp:1981:10:14:20:mpeg21:ocr" mimeType="text/xml" />
+            </didl:Component>
+          </didl:Item>
+        </didl:DIDL>
+      </metadata>
+    </record>
+  </GetRecord>
+</OAI-PMH>

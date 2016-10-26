@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srw:searchRetrieveResponse xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:tel="http://krait.kb.nl/coop/tel/handbook/telterms.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <srw:version>1.1</srw:version>
+  <srw:totalMilliSeconds>218</srw:totalMilliSeconds>
+  <srw:searchEngineMilliSeconds>218</srw:searchEngineMilliSeconds>
+  <srw:kbmdoMilliSeconds>-1</srw:kbmdoMilliSeconds>
+  <srw:numberOfRecords>1213</srw:numberOfRecords>
+  <srw:resultSetId>jfei1wldk9</srw:resultSetId>
+  <srw:resultSetIdleTime>300</srw:resultSetIdleTime>
+  <srw:records>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1975:10:09:116:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1975/10/09 00:00:00</dc:date>
+        <dcterms:abstract>* Red. Datum: Tijd: Onderwerp: Nobelprijs 10. 11 12</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 09-10-1975 - 116</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>1</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1957:05:21:192:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1957/05/21 00:00:00</dc:date>
+        <dcterms:abstract>Ie Sint Vincentius-prijs voor geneeskunde, de belangrijkste na de Nobelprijs,</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 21-05-1957 - 192</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>2</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1982:10:13:47:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1982/10/13 00:00:00</dc:date>
+        <dcterms:abstract>Red.: Datum: Tijd: Onderwerp: DE NOBELPRIJS VOOR DE VREDE 10 11</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 13-10-1982 - 47</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>3</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1969:01:30:102:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1969/01/30 00:00:00</dc:date>
+        <dcterms:abstract>In een ziekenhuis in Leuven is overleden de belgische dominicaner pater Dominiqye Pire, winnaar van de Nobelprijs- Nobelprijs voor de Vrede. Hij was 58 jaar.</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 30-01-1969 - 102</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>4</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1974:10:08:132:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1974/10/08 00:00:00</dc:date>
+        <dcterms:abstract>Red.: Datum: Tijd: Onderwerp: eo 8-10-74 18% nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 08-10-1974 - 132</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>5</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1974:10:15:116:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1974/10/15 00:00:00</dc:date>
+        <dcterms:abstract>Red. Datum: Tijd: Onderwerp: swaab 15, 10, 74 15. nobelprijs chemie De nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 15-10-1974 - 116</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>6</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1978:10:12:124:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1978/10/12 00:00:00</dc:date>
+        <dcterms:abstract>Nobelprijs i. 2. 3. 4. De Nobelprijs voor geneeskunde is dit jaa!: toegekend</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 12-10-1978 - 124</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>7</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1978:10:15:31:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1978/10/15 00:00:00</dc:date>
+        <dcterms:abstract>Red.: Datum: cas 16-10-78 Tijd: 12 M Onderwerp: nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 15-10-1978 - 31</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>8</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1978:10:16:26:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1978/10/16 00:00:00</dc:date>
+        <dcterms:abstract>nobelprijs 1. De Nobelprijs voor economie is dit jaar toegekend aan de 2. Amerikaanse</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 16-10-1978 - 26</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>9</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1949:11:04:11:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1949/11/04 00:00:00</dc:date>
+        <dcterms:abstract>vanmaanen 4 nov 8 De Nobelprijs voer letterkunde zal</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 04-11-1949 - 11</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>10</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1958:10:24:21:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1958/10/24 00:00:00</dc:date>
+        <dcterms:abstract>Red.: Datum: Tijd: ^Onderwerp 10. 11. 12 13 14. 15. De Nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 24-10-1958 - 21</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>11</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1958:10:25:15:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1958/10/25 00:00:00</dc:date>
+        <dcterms:abstract>Red.: Datum: Tijd: Onderwerp: 10. 11. 12. 13. 14. 15 De Nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 25-10-1958 - 15</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>12</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1958:10:30:44:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1958/10/30 00:00:00</dc:date>
+        <dcterms:abstract>Nobelprijs voor geneeskunde Bron: Regels: 650. 1. 4. 50. 000. 6-S8 A4 v. d. M</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 30-10-1958 - 44</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>13</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1959:11:05:53:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1959/11/05 00:00:00</dc:date>
+        <dcterms:abstract>15. EEN NOBEL-PRIJS Bro n: 650. 1. 4. 50. 000. 6' 58 A4 v. d. M. Regels:</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 05-11-1959 - 53</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>14</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1960:10:26:62:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1960/10/26 00:00:00</dc:date>
+        <dcterms:abstract>Red.: Datum: Tijd: Onderwerp: t ! 10 n. 13 14. 15. een nobel-prijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 26-10-1960 - 62</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>15</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1965:12:10:58:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1965/12/10 00:00:00</dc:date>
+        <dcterms:abstract>Red.: ^ Datur Tijd: Onderwerp: 1. 2. de nobelprijs 3. 4. a 6. 7. 8. 9. 10.</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 10-12-1965 - 58</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>16</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1983:12:10:118:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1983/12/10 00:00:00</dc:date>
+        <dcterms:abstract>Red. Tijd: ^) 1 2. 3. 4. 5 6. n 7. De Nobelprijs voor Walesa 8. L 9. 10. 11. 12</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 10-12-1983 - 118</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>17</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1953:10:13:59:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1953/10/13 00:00:00</dc:date>
+        <dcterms:abstract>to Red.: Bik Datum: 13 10 53 Tijd: ^3nderwerp: 20. 00 Churchill nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 13-10-1953 - 59</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>18</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1971:10:20:141:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1971/10/20 00:00:00</dc:date>
+        <dcterms:abstract>Red. Datum: Tijd: Onderwerp: aa 20-10-71 i%à . nobelprijs</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 20-10-1971 - 141</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>19</srw:recordPosition>
+    </srw:record>
+    <srw:record>
+      <srw:recordPacking>xml</srw:recordPacking>
+      <srw:recordSchema>info:srw/schema/1/dc-v1.1</srw:recordSchema>
+      <srw:recordData>
+        <dc:identifier>http://resolver.kb.nl/resolve?urn=anp:1971:03:23:33:mpeg21</dc:identifier>
+        <dc:type>Text</dc:type>
+        <dc:date>1971/03/23 00:00:00</dc:date>
+        <dcterms:abstract>Camara voor de Nobelprijs- te steunen. ^De centrales beslotem hiertoe na een [verzoek van de Actie Dom</dcterms:abstract>
+        <dc:title>ANP Nieuwsbericht - 23-03-1971 - 33</dc:title>
+        <dc:language>dut</dc:language>
+      </srw:recordData>
+      <srw:recordPosition>20</srw:recordPosition>
+    </srw:record>
+  </srw:records>
+  <srw:echoedSearchRetrieveRequest>
+    <srw:version>1.1</srw:version>
+    <srw:query>nobelprijs</srw:query>
+    <srw:maximumRecords>20</srw:maximumRecords>
+    <srw:recordSchema>dc</srw:recordSchema>
+    <srw:resultSetTTL>300</srw:resultSetTTL>
+    <srw:extraRequestData>
+      <collection>ANP</collection>
+    </srw:extraRequestData>
+  </srw:echoedSearchRetrieveRequest>
+</srw:searchRetrieveResponse>

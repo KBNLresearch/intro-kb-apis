@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srw:searchRetrieveResponse xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:facets="info:srw/extension/4/facets" xmlns:tel="http://krait.kb.nl/coop/tel/handbook/telterms.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <srw:version>1.1</srw:version>
+  <srw:totalMilliSeconds>47</srw:totalMilliSeconds>
+  <srw:searchEngineMilliSeconds>31</srw:searchEngineMilliSeconds>
+  <srw:kbmdoMilliSeconds>-1</srw:kbmdoMilliSeconds>
+  <srw:numberOfRecords>1213</srw:numberOfRecords>
+  <srw:resultSetId>jfei1wldaq</srw:resultSetId>
+  <srw:resultSetIdleTime>300</srw:resultSetIdleTime>
+  <srw:extraResponseData>
+    <facets:facetedSearchParameter>
+      <facets:indexes>
+        <facets:index>ANP</facets:index>
+      </facets:indexes>
+      <facets:facets>
+        <facets:name>periode</facets:name>
+      </facets:facets>
+    </facets:facetedSearchParameter>
+    <facets:facetedSearchResult>
+      <facets:facet>
+        <facets:name>periode</facets:name>
+        <facets:values>
+          <facets:value frequency="3">1/1930-1939/1937/</facets:value>
+          <facets:value frequency="4">1/1930-1939/1938/</facets:value>
+          <facets:value frequency="2">1/1930-1939/1939/</facets:value>
+          <facets:value frequency="1">1/1940-1949/1947/</facets:value>
+          <facets:value frequency="3">1/1940-1949/1948/</facets:value>
+          <facets:value frequency="11">1/1940-1949/1949/</facets:value>
+          <facets:value frequency="21">1/1950-1959/1950/</facets:value>
+          <facets:value frequency="18">1/1950-1959/1951/</facets:value>
+          <facets:value frequency="15">1/1950-1959/1952/</facets:value>
+          <facets:value frequency="34">1/1950-1959/1953/</facets:value>
+          <facets:value frequency="25">1/1950-1959/1954/</facets:value>
+          <facets:value frequency="28">1/1950-1959/1955/</facets:value>
+          <facets:value frequency="17">1/1950-1959/1956/</facets:value>
+          <facets:value frequency="16">1/1950-1959/1957/</facets:value>
+          <facets:value frequency="63">1/1950-1959/1958/</facets:value>
+          <facets:value frequency="20">1/1950-1959/1959/</facets:value>
+          <facets:value frequency="26">1/1960-1969/1960/</facets:value>
+          <facets:value frequency="31">1/1960-1969/1961/</facets:value>
+          <facets:value frequency="16">1/1960-1969/1962/</facets:value>
+          <facets:value frequency="15">1/1960-1969/1963/</facets:value>
+          <facets:value frequency="36">1/1960-1969/1964/</facets:value>
+          <facets:value frequency="28">1/1960-1969/1965/</facets:value>
+          <facets:value frequency="23">1/1960-1969/1966/</facets:value>
+          <facets:value frequency="28">1/1960-1969/1967/</facets:value>
+          <facets:value frequency="25">1/1960-1969/1968/</facets:value>
+          <facets:value frequency="25">1/1960-1969/1969/</facets:value>
+          <facets:value frequency="54">1/1970-1979/1970/</facets:value>
+          <facets:value frequency="51">1/1970-1979/1971/</facets:value>
+          <facets:value frequency="32">1/1970-1979/1972/</facets:value>
+          <facets:value frequency="52">1/1970-1979/1973/</facets:value>
+          <facets:value frequency="56">1/1970-1979/1974/</facets:value>
+          <facets:value frequency="65">1/1970-1979/1975/</facets:value>
+          <facets:value frequency="25">1/1970-1979/1976/</facets:value>
+          <facets:value frequency="33">1/1970-1979/1977/</facets:value>
+          <facets:value frequency="48">1/1970-1979/1978/</facets:value>
+          <facets:value frequency="23">1/1970-1979/1979/</facets:value>
+          <facets:value frequency="46">1/1980-1989/1980/</facets:value>
+          <facets:value frequency="61">1/1980-1989/1981/</facets:value>
+          <facets:value frequency="49">1/1980-1989/1982/</facets:value>
+          <facets:value frequency="74">1/1980-1989/1983/</facets:value>
+          <facets:value frequency="10">1/1980-1989/1984/</facets:value>
+        </facets:values>
+      </facets:facet>
+    </facets:facetedSearchResult>
+  </srw:extraResponseData>
+  <srw:echoedSearchRetrieveRequest>
+    <srw:version>1.1</srw:version>
+    <srw:query>nobelprijs</srw:query>
+    <srw:recordSchema>dc</srw:recordSchema>
+    <srw:resultSetTTL>300</srw:resultSetTTL>
+    <srw:extraRequestData>
+      <facets:facetedSearchParameter>
+        <facets:indexes>
+          <facets:index>ANP</facets:index>
+        </facets:indexes>
+        <facets:facets>
+          <facets:name>periode</facets:name>
+        </facets:facets>
+      </facets:facetedSearchParameter>
+      <facetprefix>1</facetprefix>
+      <collection>ANP</collection>
+      <facetname>periode</facetname>
+    </srw:extraRequestData>
+  </srw:echoedSearchRetrieveRequest>
+</srw:searchRetrieveResponse>
