@@ -16,9 +16,9 @@ For each item in the KB collections, the following metadata and digital objects 
 
 -   Descriptive metadata in the [Dublin Core] (http://dublincore.org/documents/dces/) (DC) vocabulary, with some KB-specific extensions (DCX). Here you will find information about title, author, date, language etc. of any item.
 
--   An [ALTO] (https://www.loc.gov/standards/alto/) file with the content and layout information of each item. This is most often used for applications wanting to highlight specific elements on a page.
+-   One or more [ALTO] (https://www.loc.gov/standards/alto/) files with the content and layout information of each item. This is most often used for applications wanting to highlight specific elements on a page.
 
--   An OCR file, containing the textual content of the item, with some information about the structure of the text, such as what the title is, and where different paragraphs begin and end.
+-   One or more OCR files, containing the textual content of the item, with some information about the structure of the text, such as what the title is, and where different paragraphs begin and end.
 
 -   One or more images of the object, usually in [JPEG] (https://jpeg.org/jpeg/) format.
 
@@ -167,7 +167,7 @@ The SRU standard protocol includes a number of other parameters and parameter va
 
 ## Exercise 4: Querying the index with SRU
 
--   Open a new window or tab in your browser and navigate to the search API base URL. Now construct the parameters for querying the ANP collection with a single keyword of your choice. Find the total number of results found for your query.
+-   Open a new window or tab in your browser and navigate to the search API base URL. Now construct the parameters for querying the ANP collection with a single keyword of your choice. Find the total number of results for your query.
 
 -   Use the `maximumRecords`, `startRecord` and `x-fields` parameters to expand and navigate through the results.
 
@@ -234,7 +234,8 @@ Please note that not all collections are available as open data sets, so if you 
 
 ## Exercise 6: Moving on to other sets
 
--   Visit the [Data Services] (<https://www.kb.nl/en/resources-research-guides/data-services-apis>) page of the KB website and take a look at the open datasets that are available. Open the technical instructions sheet for a dataset of your choice and try it out with the search and harvest APIs.
+-   Visit the [Data Services] (<https://www.kb.nl/en/resources-research-guides/data-services-apis>) page of the KB website and take a look at the open datasets that are available.
+-   Open the technical instructions for a dataset of your choice and try it out with the search and harvest APIs.
 
 ## Questions?
 
