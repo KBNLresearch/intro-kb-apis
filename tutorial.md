@@ -201,7 +201,7 @@ search results by year, for example, is:
 <http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=1&x-facetname=periode&x-facets=indexes:ANPfacets:periode>
 
 The `maximumRecords` parameter has been set to 0 here, so that only the
-facetted results are present in the [response] (responses/sru_facets.xml). The `x-facetprefix` parameter can take values
+facetted results are present in the [response] (responses/sru_search_facets.xml). The `x-facetprefix` parameter can take values
 from 0 to 3, resulting in different temporal resolutions of the facet
 (where 0=decade, 1=year, 2=month, and 3=day). The `x-facetname` and `x-facets`
 parameters are needed to indicate the particular facet requested.
