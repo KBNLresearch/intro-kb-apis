@@ -72,7 +72,7 @@ a so-called query string appears, containing a number of URL parameters with the
 First, the operation that is to be performed, called `verb` according to the OAI protocol, needs to be specified, which in this case is `GetRecord` to retrieve a
 single metadata record. Next, the unique identifier `anp:anp:1981:10:14:20:mpeg2` of the requested object needs to be supplied, which is inserted with the `identifier` parameter. The identifier  used here consists only of the final part of the persistent resolver link (after `urn=`) for the typoscript, to which the prefix `anp:` is then added to indicate the specific metadata set we are harvesting from. And finally, the `didl` metadata format we would like to retrieve is requested with the parameter `metadataPrefix`.
 
-The [response] (oai_get_record.xml) to this request will be an XML file starting with some general information about the request, followed by the actual DIDL metadata record. Note that the descriptive metadata for the typoscript is embedded in a block of the structural metadata, whereas other data types can be retrieved using resolver links.
+The [response] (responses/oai_get_record.xml) to this request will be an XML file starting with some general information about the request, followed by the actual DIDL metadata record. Note that the descriptive metadata for the typoscript is embedded in a block of the structural metadata, whereas other data types can be retrieved using resolver links.
 
 ## Exercise 2: Getting started with OAI-PMH
 
@@ -112,7 +112,7 @@ first 400 identifiers are returned in the initial response of a
 
 <http://services.kb.nl/mdo/oai?verb=ListIdentifiers&set=anp&metadataPrefix=didl>
 
-In the [response] (oai_list_identifiers.xml) for this initial request a so-called resumption token will be included at the end, such as
+In the [response] (responses/oai_list_identifiers.xml) for this initial request a so-called resumption token will be included at the end, such as
 `anp!2008-09-24T09:09:16.332Z!!didl!2317275`. This token can be added to a
 new request with the `resumptionToken` parameter, without the need to
 specify the set name and metadata format again, like this:
@@ -148,7 +148,7 @@ base URL, followed by a question mark and a query string containing a
 number of parameters. The base URL for the search API is `http://jsru.kb.nl/sru/sru`. As a first parameter the `operation` that is to be performed is specified, which in this case is `searchRetrieve` for a regular search query. We are searching the collection of digitized typoscripts, which is indicated with the `x-collection` parameter. Collections present in the index may have a name that is different form the set name in the metadata repository. Here, the collection name is `ANP`, in capitals, and the SRU syntax, like OAI-PMH, is case sensitive. Finally, the keyword we are interested in searching is `nobelprijs`, which
 is thus entered after the `query` field.
 
-The [response] (sru_search_retrieve.xml) to this request will contain the search results in XML format, along with some general information about the request, such as the version of the SRU protocol being used, the time it took to process
+The [response] (responses/sru_search_retrieve.xml) to this request will contain the search results in XML format, along with some general information about the request, such as the version of the SRU protocol being used, the time it took to process
 the request, and the total number of search results found.
 
 ## Other SRU parameters
@@ -201,7 +201,7 @@ search results by year, for example, is:
 <http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=1&x-facetname=periode&x-facets=indexes:ANPfacets:periode>
 
 The `maximumRecords` parameter has been set to 0 here, so that only the
-facetted results are shown. The `x-facetprefix` parameter can take values
+facetted results are present in the [response] (responses/sru_facets.xml). The `x-facetprefix` parameter can take values
 from 0 to 3, resulting in different temporal resolutions of the facet
 (where 0=decade, 1=year, 2=month, and 3=day). The `x-facetname` and `x-facets`
 parameters are needed to indicate the particular facet requested.
