@@ -4,23 +4,23 @@
 
 The KB offers access to a large amount of digital content: from books to parliamentary papers and from historical newspapers to medieval illuminated manuscripts. Often users will first encounter these collections through one of several KB websites, such as [Delpher] (http://www.delpher.nl/), [Memory of the Netherlands] (http://www.geheugenvannederland.nl/) or the [Dutch Digital Parliamentary Papers] (http://www.statengeneraaldigitaal.nl/). These website provide a graphical user interface (GUI) with functionality to browse, search, view and download digital objects and their metadata.
 
-Others may want to (re)use some of this content: heritage institutions or commercial parties to develop an alternative user interface that offers new functionality, additional information, or combines data from different sources (e.g. [Europeana] (http://www.europeana.eu/)); Digital Humanities scholars in order to explore their research questions, either by using existing tools or developing their own software. To enable such user groups to programmatically retrieve the data behind websites such as Delpher the KB has created a number of data services or APIs (Application Programming Interface).
+Others may want to (re)use some of this content: heritage institutions or commercial parties to develop an alternative user interface that offers new functionality, additional information, or combines data from different sources (e.g. [Europeana] (http://www.europeana.eu/)); Digital Humanities scholars in order to explore their research questions, either by using existing tools or developing their own software. To enable such user groups to programmatically retrieve data in bulk the KB has created a number of data services or APIs (Application Programming Interface).
 
 ## What data?
 
-For each item in the KB collections, the following metadata and digital objects will typically be available:
+For each digital object in the KB collections, the following metadata and subobjects will typically be available:
 
-- Structural metadata in [MPEG21 DIDL] (http://mpeg.chiariglione.org/standards/mpeg-21) (Digital Item Declaration Language) format. This metadata describes the way in which a composite digital object is structured, containing information about all associated data, such as descriptive metadata, images and full-text objects.
+- Structural metadata in [MPEG21 DIDL] (http://mpeg.chiariglione.org/standards/mpeg-21) (Digital Item Declaration Language) format. This describes the way in which a composite digital object is structured, containing information about all associated files, such as descriptive metadata, images and full-text objects.
 
-- Descriptive metadata in the [Dublin Core] (http://dublincore.org/documents/dces/) (DC) vocabulary, with some KB-specific extensions (DCX). Here you will find information about title, author, date, language etc. of any item.
+- Descriptive metadata in the [Dublin Core] (http://dublincore.org/documents/dces/) (DC) vocabulary, with some KB-specific extensions (DCX). Here you will find information about title, author, date, language etc.
 
 - One or more [ALTO] (https://www.loc.gov/standards/alto/) files with the content and layout information of each item. This is most often used for applications wanting to highlight specific elements on a page.
 
-- One or more OCR files, containing the textual content of the item, with some information about the structure of the text, such as what the title is, and where different paragraphs begin and end.
+- One or more OCR (Optical Character Recognition) files containing the textual content of the item and some information about the structure of the text, such as what the title is and where different paragraphs begin and end.
 
 - One or more images of the object, usually in [JPEG] (https://jpeg.org/jpeg/) format.
 
-Apart form the images, all data is provided in [XML] (https://www.w3.org/TR/xml/) format. This is a simple markup language that adds machine-readable structure to textual data by enclosing distinct bits of information between tags. One of the benefits of this data format is that it can be easily read by humans as well.
+Apart form the images, all data is provided in [XML] (https://www.w3.org/TR/xml/) (Extensible Markup Language) format. This is a simple markup language that adds machine-readable structure to textual data by enclosing distinct bits of information between tags. One of the benefits of this data format is that it can be easily read by humans as well.
 
 ## KB infrastructure and APIs
 
