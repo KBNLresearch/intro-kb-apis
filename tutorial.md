@@ -2,13 +2,9 @@
 
 ## Why APIs?
 
-The KB offers access to a large amount of digital content: from books to
-parliamentary papers and from historical newspapers to medieval illuminated
-manuscripts. Often users will first encounter these collections through one of several KB websites, such as [Delpher] (http://www.delpher.nl/), [Memory of the Netherlands] (http://www.geheugenvannederland.nl/) or the [Dutch Digital Parliamentary Papers] (http://www.statengeneraaldigitaal.nl/). These website provide a graphical user interface (GUI) with functionality to browse, search, view and download digital objects and their metadata.
+The KB offers access to a large amount of digital content: from books to parliamentary papers and from historical newspapers to medieval illuminated manuscripts. Often users will first encounter these collections through one of several KB websites, such as [Delpher] (http://www.delpher.nl/), [Memory of the Netherlands] (http://www.geheugenvannederland.nl/) or the [Dutch Digital Parliamentary Papers] (http://www.statengeneraaldigitaal.nl/). These website provide a graphical user interface (GUI) with functionality to browse, search, view and download digital objects and their metadata.
 
-Other parties may want to (re)use these data: heritage institutions or commercial parties may want to develop an alternative user interface that offers new functionality, additional information, or combines data from different sources (e.g. [Europeana] (http://www.europeana.eu/)). And Digital Humanities researchers may want to perform all kinds of analyses on them to explore research questions, either by using existing tools or by developing their own software (see the [Dirt Directory] (http://dirtdirectory.org) for some example applications).
-
-That is why the KB offers a number of data services or so-called APIs (Application Programming Interface) to directly access the ‘raw data’ that websites such as Delpher are built upon.
+Others may want to (re)use some of this content: heritage institutions or commercial parties to develop an alternative user interface that offers new functionality, additional information, or combines data from different sources (e.g. [Europeana] (http://www.europeana.eu/)); Digital Humanities scholars in order to explore their research questions, either by using existing tools or by developing their own software (see the [Dirt Directory] (http://dirtdirectory.org) for some examples). To enable such user groups to programmatically retrieve the data behind websites such as Delpher the KB has created a number of data services or APIs (Application Programming Interface).
 
 ## What data?
 
@@ -78,7 +74,7 @@ storage is:
 If you look this URL closely, you can see that it is composed of a number of different elements. All requests start with the base URL of the harvest API, being `http://services.kb.nl/mdo/oai`, followed by a question mark. After that, a so-called query string appears, containing a number of URL parameters with the details of the request. The parameters take the form of field-value pairs, separated by ampersand signs. 
 
 First, the operation that is to be performed, called `verb` according to the OAI protocol, needs to be specified, which in this case is `GetRecord` to retrieve a
-single metadata record. Next, the unique identifier `anp:anp:1981:10:14:20:mpeg2` of the requested object needs to be supplied, which is inserted with the `identifier` parameter. The identifier used here consists only of the final part of the persistent resolver identifier (after `urn=`) for the typoscript, to which the prefix `anp:` is then added to indicate the specific metadata set we are harvesting from. Finally, the `didl` metadata format we would like to retrieve is requested with the parameter `metadataPrefix`.
+single metadata record. Next, the unique identifier `anp:anp:1981:10:14:20:mpeg21` of the requested object needs to be supplied, which is inserted with the `identifier` parameter. The identifier used here consists only of the final part of the persistent resolver identifier (after `urn=`) for the typoscript, to which the prefix `anp:` is then added to indicate the specific metadata set we are harvesting from. Finally, the `didl` metadata format we would like to retrieve is requested with the parameter `metadataPrefix`.
 
 The [response] (responses/oai_get_record.xml) to this request will be an XML file starting with some general information about the request, followed by the actual DIDL metadata record. Note that the descriptive metadata for the typoscript is embedded in a block of the structural metadata, whereas other data types can be retrieved using resolver links.
 
