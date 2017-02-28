@@ -193,6 +193,6 @@ Note that not all collections are available as open data sets, so if you want to
 -   Visit the [Data Services] (<https://www.kb.nl/en/resources-research-guides/data-services-apis>) page of the KB website and take a look at the open datasets that are available.
 -   Open the technical instructions for a dataset of your choice and try it out with the search and harvest APIs.
 
-### Questions?
+## Questions?
 
 If you have any questions about a particular data set or run into problems while using the APIs, you can always contact us using the KB Digital Humanities mailbox at <dh@kb.nl>.
