@@ -91,12 +91,11 @@ will yield the same results.
 
 ### Harvesting an entire set
 
-Since sets in an OAI-PMH repository are often quite large, harvesting an entire set will often take a number of steps. First, all identifiers for the set are harvested. By default, only the first 400 identifiers are returned in the initial response of a `ListIdentifiers` request, such as:
+Since sets in an OAI-PMH repository can be quite large, harvesting an entire set should be performed in a number of steps. First, all identifiers for the set are harvested. By default, only the first 400 identifiers are returned in the initial response of a `ListIdentifiers` request, such as:
 
 <http://services.kb.nl/mdo/oai?verb=ListIdentifiers&set=anp&metadataPrefix=didl>
 
-In the [response] (responses/oai_list_identifiers.xml) a so-called resumption token is included near the end, e.g. `anp!2008-09-24T09:09:16.332Z!!didl!2317275`. This token can be added to a
-subsequent request with the `resumptionToken` parameter, without the need to specify the set name and metadata format again:
+In the [response] (responses/oai_list_identifiers.xml) a so-called resumption token is included near the end, e.g. `anp!2008-09-24T09:09:16.332Z!!didl!2317275`. This token can be added to a subsequent request with the `resumptionToken` parameter, without the need to specify the set name and metadata format again:
 
 <http://services.kb.nl/mdo/oai?verb=ListIdentifiers&resumptionToken=anp!2008-09-24T09:09:16.332Z!!didl!2317275>
 
@@ -112,19 +111,13 @@ The resulting list of identifiers can now be used to retrieve the full metadata 
 
 ## The SRU search API
 
-If you don't want to retrieve an entire set, but are more interested in
-getting results for a particular search query, you can use the search API. The search API is based on [SRU] (http://www.loc.gov/standards/sru/) (Search and Retrieval via URL), a standard protocol for performing search queries on an index and retrieving the results. It uses [CQL] (https://www.loc.gov/standards/sru/cql/) (Contextual Query Language), another standard, as its query language, and is currently maintained by the Library of Congress.
-
-A simple request to the search API for querying the ANP collection with a single  keyword looks like this:
+If you are interested in getting the results for a particular search query, rather than dowloading an entire set, you can use the search API. The KB search API is based on [SRU] (http://www.loc.gov/standards/sru/) (Search and Retrieval via URL), a standard protocol for performing search queries on an index that is currently maintained by the Library of Congress. The base URL for the search API is `http://jsru.kb.nl/sru/sru`. A simple request to the search API for querying the ANP collection with a single keyword would be:
 
 <http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs>
 
-As with a request to the harvest API, the request URL is composed of a
-base URL, followed by a question mark and a query string containing a
-number of parameters. The base URL for the search API is `http://jsru.kb.nl/sru/sru`. As a first parameter the `operation` that is to be performed is specified, which in this case is `searchRetrieve` for a regular search query. We are searching the collection of digitized typoscripts, which is indicated with the `x-collection` parameter. Collections present in the index may have a name that is different form the set name in the metadata repository. Here, the collection name is `ANP`, in capitals, and the SRU syntax, like OAI-PMH, is case sensitive. Finally, the keyword we are interested in searching is `nobelprijs`, which
-is thus entered after the `query` field.
+As a first parameter the `operation` that is to be performed is specified, which in this case is `searchRetrieve` for a regular search query. The keyword we are interested in is `nobelprijs`, which is thus entered with the `query` field. Finally, the collection to be searched is indicated with the `x-collection` parameter and the collection name `ANP` (with the SRU syntax, like OAI-PMH, being case sensitive). Note that the name of collections in the index may differ from the name of the corresponding set in the metadata repository.
 
-The [response] (responses/sru_search_retrieve.xml) to this request will contain the search results in XML format, along with some general information about the request, such as the version of the SRU protocol being used, the time it took to process the request, and the total number of search results found.
+The [response] (responses/sru_search_retrieve.xml) to this request will contain the search results in XML format, along with some general information about the request, such as the version of the SRU protocol being used, the time it took to process the request, and the total number of search results.
 
 ### SRU parameters
 
@@ -147,7 +140,7 @@ The SRU standard protocol includes a number of other parameters and parameter va
 - Use the `maximumRecords`, `startRecord` and `x-fields` parameters to expand and navigate through the results.
 
 ### CQL query syntax
-
+uses [CQL] (https://www.loc.gov/standards/sru/cql/) (Contextual Query Language), another standard, as its query language, and 
 As was mentioned already, the SRU standard protocol uses CQL as its
 query language. With the CQL query syntax more elaborate queries can be
 formed.
