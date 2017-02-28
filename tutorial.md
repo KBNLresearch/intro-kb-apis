@@ -111,7 +111,7 @@ The resulting list of identifiers can now be used to retrieve the full metadata 
 
 ## The SRU search API
 
-If you are interested in getting the results for a particular search query, rather than dowloading an entire set, you can use the search API. The KB search API is based on [SRU] (http://www.loc.gov/standards/sru/) (Search and Retrieval via URL), a standard protocol for performing search queries on an index that is currently maintained by the Library of Congress. The base URL for the search API is `http://jsru.kb.nl/sru/sru`. A simple request to the search API for querying the ANP collection with a single keyword would be:
+If you are interested in getting the results for a particular search query, rather than dowloading an entire set, you can use the search API based on [SRU] (http://www.loc.gov/standards/sru/) (Search and Retrieval via URL), a standard protocol for performing search queries that is currently maintained by the Library of Congress. The base URL for the search API is `http://jsru.kb.nl/sru/sru` and a simple request to query the ANP collection with a single keyword would be:
 
 <http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs>
 
@@ -121,67 +121,58 @@ The [response] (responses/sru_search_retrieve.xml) to this request will contain 
 
 ### SRU parameters
 
-The SRU standard protocol includes a number of other parameters and parameter values that can be used to further tune the response returned. Also, the KB has implemented some extensions to the protocol to enable additional functionality. Parameters that are part of this extension can be recognized by the `x-` prefix.
+The SRU protocol includes a number of parameters that can be used to further tune the response received and the KB has implemented some extensions to the protocol to enable additional functionality. Parameters that are part of this KB extension can be recognized by the `x-` prefix.
 
-- With the `operation` parameter set to `explain`, some general information about the service can be obtained: <br><http://jsru.kb.nl/sru/sru?operation=explain>
+- With the `operation` parameter set to `explain`, some general information about the service can be obtained:<br><http://jsru.kb.nl/sru/sru?operation=explain>
 
-- By default, the first 20 search results are returned. This number can be adjusted with the `maximumRecords` parameter: <br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=100>
+- By default, the first 20 search results are returned. This number can be adjusted with the `maximumRecords` parameter:<br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=100>
 
-- If you want to start viewing the result set from a particular record onwards, you can use the `startRecord` parameter: <br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&startRecord=100>
+- If you want to start viewing the result set from a particular record onwards, you can use the `startRecord` parameter:<br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&startRecord=100>
 
-- If you want to add particular bits of information to the display, you can use the `x-fields` parameter. The OCR, for example, can be added by entering the value `content` in this field. Multiple values an be entered as well, separated by commas. To view all available information simply enter `*` here: <br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&x-fields=content,volgnummer>
+- If you want to add particular bits of information to the display, you can use the `x-fields` parameter. The OCR, for example, can be added by entering the value `content` in this field. Multiple values an be entered as well, separated by commas. To view all available information simply enter `*` here:<br>
+<http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&x-fields=content,volgnummer>
 
-- By default, the Dublin Core descriptive metadata is displayed, but with the `recordSchema` parameter other types of metadata, such as the DIDL, may be retrieved, if available: <br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&recordSchema=didl>
+- By default, the Dublin Core descriptive metadata is displayed, but with the `recordSchema` parameter other types of metadata, such as the DIDL, may be retrieved, if available:<br>
+<http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&recordSchema=didl>
 
 ### Exercise 4: Querying the index with SRU
 
-- Open a new window or tab in your browser and navigate to the search API base URL. Now construct the parameters for querying the ANP collection with a single keyword of your choice. Find the total number of results for your query.
+- Open a new window or tab in your browser and navigate to the search API base URL. Construct the parameters for querying the ANP collection with a single keyword of your choice. Find the total number of results for your query.
 
 - Use the `maximumRecords`, `startRecord` and `x-fields` parameters to expand and navigate through the results.
 
 ### CQL query syntax
-uses [CQL] (https://www.loc.gov/standards/sru/cql/) (Contextual Query Language), another standard, as its query language, and 
-As was mentioned already, the SRU standard protocol uses CQL as its
-query language. With the CQL query syntax more elaborate queries can be
-formed.
+ 
+The SRU protocol uses [CQL] (https://www.loc.gov/standards/sru/cql/) (Contextual Query Language), another standard, as its query language. With the CQL query syntax more elaborate search queries can be formed:
 
-- To search of a string consisting of multiple words, enter the string between double quotes as the query parameter value: <br>[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query="nobelprijs literatuur"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=%22nobelprijs+literatuur%22)
+- To search a string consisting of multiple words, enter the string between double quotes as the query parameter value:<br>
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query="nobelprijs literatuur"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=%22nobelprijs+literatuur%22)
 
-- For an OR- or AND-query consisting of two terms, simply use the words `OR` or `AND` between the search terms, surrounded by spaces: <br> [http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs AND literatuur] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs+AND+literatuur)
+- For an OR- or AND-query consisting of two terms, simply use the words `OR` or `AND` between the search terms, surrounded by spaces:<br>
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs AND literatuur] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs+AND+literatuur)
 
-- Wildcards in the form of an asterisk sign `*` are also supported when appearing in the middle or at the end of a keyword: <br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelpr*>
+- Wildcards in the form of an asterisk `*` are also supported when appearing in the middle or at the end of a keyword:<br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelpr*>
 
-- To restrict the search to a particular field, add the field name before the search term. This option is only available for specific fields for the ANP collection, such as `date` and `volgnummer`: <br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date=01-01-1960>
+- To restrict the search to a particular field, add the field name before the search term. This option is only available for specific fields for the ANP collection, such as `date` and `volgnummer`:<br>
+<http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date=01-01-1960>
 
-- To restrict the search to a specific period in time, use the `within` syntax in combination with the `date` field: <br>[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date within "01-01-1960 01-01-1961"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date+within+%2201-01-1960+01-01-1961%22)
+- To restrict the search to a specific period in time, use the `within` syntax in combination with the `date` field:<br>
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date within "01-01-1960 01-01-1961"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date+within+%2201-01-1960+01-01-1961%22)
 
-When constructing these more elaborate queries, you have to be careful to properly encode certain characters, such as spaces, that may not appear as part of an URL. This means replacing these characters with a code: a space should be
-replaced by `%20` or `+`, for example, and a double quotation mark with `%22`. Many modern browsers will automatically take care of this encoding for
-you, but if you run into any problems, you can find the required code
-for such characters and have your query encoded for you at the [URL Encoding Reference] (http://www.w3schools.com/tags/ref_urlencode.asp).
+When constructing these queries you have to be careful to properly encode certain characters, such as spaces, that may not appear as part of an URL. A space should be replaced by `%20` or `+`, for example, and a double quotation mark with `%22`. Many browsers will automatically take care of this encoding for you, but if you run into problems you can get your query encoded at the [URL Encoding Reference] (http://www.w3schools.com/tags/ref_urlencode.asp).
 
 ### Faceting with SRU
 
-A final interesting aspect of the SRU search API is the capability
-for faceting the search results by period. A query for faceting the
-search results by year, for example, is:
+The search API has the option of faceting the search results by period. A query for faceting the search results by year, for example, is:
 
 <http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=1&x-facetname=periode&x-facets=indexes:ANPfacets:periode>
 
-The `maximumRecords` parameter has been set to 0 here, so that only the
-facetted results are present in the [response] (responses/sru_search_facets.xml). The `x-facetprefix` parameter can take values
-from 0 to 3, resulting in different temporal resolutions of the facet
-(where 0=decade, 1=year, 2=month, and 3=day). The `x-facetname` and `x-facets`
-parameters are needed to indicate the particular facet requested.
+The `maximumRecords` parameter has been set to 0 here, so that only the facetted results are present in the [response] (responses/sru_search_facets.xml). The `x-facetprefix` parameter can take values from 0 to 3, resulting in different temporal resolutions of the facet (where 0=decade, 1=year, 2=month, and 3=day). The `x-facetname` and `x-facets` parameters are needed to indicate the particular facet requested.
 
-The period facet can be filtered as well. If you want facets with a
-resolution of a month, but you are only interested in the decade
+The period facet can be filtered as well. If you want facets with a resolution of a month, but are only interested in the decade
 1950-1959, the query would be:
 
-[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode
-exact "0/1950-1959/"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode+exact+%220%2F1950-1959%2F%22)
-
-Again, don't forget to properly encode the special characters that are part of the `periode exact "0/1950-1959/"` value of the `x-filter` parameter here, if your browser does not do this automatically. The encoded version of this value is `periode+exact+%220%2F1950-1959%2F%22`.
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode exact "0/1950-1959/"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode+exact+%220%2F1950-1959%2F%22)
 
 ### Exercise 5: Advanced SRU options
 
@@ -191,14 +182,11 @@ Again, don't forget to properly encode the special characters that are part of t
 
 - Create a faceted view of a result set of your choice by using the `x-facets`, `x-facetname` and `x-facetprefix` parameters.
 
-## KB data sets
+## Other KB data sets
 
-The KB offers access to many other collections besides the ANP radio
-bulletins through its APIs. Although the data available may vary
-somewhat across collections, the use of the APIs as described here will
-be the same for every collection. Other collections may be a bit more complex to work with if objects with a hierarchical structure, such as a newspaper issue comprising multiple pages and articles, are involved. However, for several such collections detailed technical instructions are available from the [Data Services] (<https://www.kb.nl/en/resources-research-guides/data-services-apis>) page of the KB website to help you get started.
+The KB offers access to many other collections besides the ANP radio bulletins through its APIs. Other collections may be somewhat more complex to work with if objects with a hierarchical structure, such as a newspaper issue comprising multiple pages and articles, are involved. However, for several such collections detailed technical instructions are available from the [Data Services] (<https://www.kb.nl/en/resources-research-guides/data-services-apis>) page of the KB website to help you get started.
 
-Please note that not all collections are available as open data sets, so if you want to use a copyright-protected collection, please contact us first to discuss the possibilities. It may be necessary to draw up a contract stating the allowed use of the dataset, or to obtain a so-called API key that can be used to gain access to restricted materials.
+Note that not all collections are available as open data sets, so if you want to use a copyright-protected collection, please contact us first to discuss the possibilities. It may be necessary to draw up a contract stating the allowed use of the dataset, or to obtain a so-called API key that can be used to gain access to restricted materials.
 
 ### Exercise 6: Moving on to other sets
 
@@ -207,6 +195,4 @@ Please note that not all collections are available as open data sets, so if you 
 
 ### Questions?
 
-If you have any questions about a particular data set or run into
-problems while using the APIs, you can always contact us using the KB
-Digital Humanities mailbox at <dh@kb.nl>.
+If you have any questions about a particular data set or run into problems while using the APIs, you can always contact us using the KB Digital Humanities mailbox at <dh@kb.nl>.
