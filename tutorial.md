@@ -144,10 +144,10 @@ The SRU protocol includes a number of parameters that can be used to further tun
 The SRU protocol uses [CQL](https://www.loc.gov/standards/sru/cql/) (Contextual Query Language), another standard, as its query language. With the CQL query syntax more elaborate search queries can be formed:
 
 - To search a string consisting of multiple words, enter the string between double quotes as the query parameter value:<br>
-[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query="nobelprijs literatuur"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=%22nobelprijs+literatuur%22)
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query="nobelprijs literatuur"](http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=%22nobelprijs+literatuur%22)
 
 - For an OR- or AND-query consisting of two terms, simply use the words `OR` or `AND` between the search terms, surrounded by spaces:<br>
-[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs AND literatuur] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs+AND+literatuur)
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs AND literatuur](http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs+AND+literatuur)
 
 - Wildcards in the form of an asterisk `*` are also supported when appearing in the middle or at the end of a keyword:<br><http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelpr*>
 
@@ -155,7 +155,7 @@ The SRU protocol uses [CQL](https://www.loc.gov/standards/sru/cql/) (Contextual 
 <http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date=01-01-1960>
 
 - To restrict the search to a specific period in time, use the `within` syntax in combination with the `date` field:<br>
-[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date within "01-01-1960 01-01-1961"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date+within+%2201-01-1960+01-01-1961%22)
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date within "01-01-1960 01-01-1961"](http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=date+within+%2201-01-1960+01-01-1961%22)
 
 When constructing these queries you have to be careful to properly encode certain characters, such as spaces, that may not appear as part of an URL. A space should be replaced by `%20` or `+`, for example, and a double quotation mark with `%22`. Many browsers will automatically take care of this encoding for you, but if you run into problems you can get your query encoded at the [URL Encoding Reference](http://www.w3schools.com/tags/ref_urlencode.asp).
 
@@ -169,7 +169,7 @@ The `maximumRecords` parameter has been set to 0 here, so that only the facetted
 
 The period facet can be filtered as well. If you want facets with a resolution of a month, but are only interested in the decade 1950-1959, the query would be:
 
-[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode exact "0/1950-1959/"] (http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode+exact+%220%2F1950-1959%2F%22)
+[http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode exact "0/1950-1959/"](http://jsru.kb.nl/sru/sru?operation=searchRetrieve&x-collection=ANP&query=nobelprijs&maximumRecords=0&x-facetprefix=2&x-facetname=periode&x-facets=indexes:ANPfacets:periode&x-filter=periode+exact+%220%2F1950-1959%2F%22)
 
 ### Exercise 5: Advanced SRU options
 
